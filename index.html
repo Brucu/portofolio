@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" href="favicon.svg">
+  <meta name="generator" content="Astro v7.1.6">
+  <meta name="description" content="Nowoczesna jednstronicowa strona portfolio i CV zbudowana z Astro.">
+  <meta name="theme-color" content="#020617">
+  <title>Jakub Bruc | Portfolio</title>
+  <link rel="stylesheet" href="./_astro/index.B2zRkVyN.css">
+</head>
+
+<body>
+  <nav id="top-nav"
+    class="sticky top-0 z-50 border-b border-transparent bg-transparent backdrop-blur-md transition-all duration-300 sm:border-white/10"
+    data-astro-cid-yxete6jp>
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6" data-astro-cid-yxete6jp>
+      <a href="#home" class="text-lg font-semibold tracking-wide reveal delay-75 smooth-hover" aria-label="Home"
+        data-astro-cid-yxete6jp>
+        <span class="text-amber-300 font-bold" data-astro-cid-yxete6jp>&lt;</span><span class="text-stone-100"
+          data-astro-cid-yxete6jp>Jakub Bruc</span>
+        <span class="text-amber-300 font-bold" data-astro-cid-yxete6jp>/&gt;</span></a><button id="menu-toggle"
+        class="group inline-flex h-10 w-10 items-center justify-center rounded-md text-stone-100 transition hover:bg-white/10 sm:hidden"
+        aria-label="Toggle navigation" aria-expanded="false" data-astro-cid-yxete6jp>
+        <span class="sr-only" data-astro-cid-yxete6jp>Toggle menu</span>
+        <span class="flex flex-col gap-1.5" data-astro-cid-yxete6jp><span
+            class="block h-0.5 w-5 rounded-full bg-current transition group-aria-expanded:rotate-45 group-aria-expanded:translate-y-2"
+            data-astro-cid-yxete6jp></span>
+          <span class="block h-0.5 w-5 rounded-full bg-current transition group-aria-expanded:opacity-0"
+            data-astro-cid-yxete6jp></span>
+          <span
+            class="block h-0.5 w-5 rounded-full bg-current transition group-aria-expanded:-rotate-45 group-aria-expanded:-translate-y-2"
+            data-astro-cid-yxete6jp>
+          </span>
+        </span>
+      </button>
+      <div id="nav-links"
+        class="absolute right-0 top-full mt-3 hidden min-w-[200px] origin-top-right flex-col gap-0 rounded-lg border border-white/20 bg-stone-950/70 backdrop-blur-lg shadow-xl transition-all duration-200 ease-out sm:static sm:mt-0 sm:flex sm:min-w-0 sm:flex-row sm:items-center sm:gap-6 sm:rounded-none sm:border-0 sm:bg-transparent sm:shadow-none sm:backdrop-blur-none reveal delay-150"
+        data-astro-cid-yxete6jp>
+        <a href="#about"
+          class="block px-4 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-white/10 hover:text-amber-300 sm:px-0 sm:py-0 sm:text-stone-200 sm:hover:bg-transparent sm:hover:text-amber-300 first:rounded-t-[7px] last:rounded-b-[7px] sm:first:rounded-none sm:last:rounded-none"
+          data-astro-cid-yxete6jp>O mnie</a>
+        <div class="hidden h-px bg-white/20 sm:hidden" data-astro-cid-yxete6jp></div>
+        <a href="#experience"
+          class="block px-4 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-white/10 hover:text-amber-300 sm:px-0 sm:py-0 sm:text-stone-200 sm:hover:bg-transparent sm:hover:text-amber-300"
+          data-astro-cid-yxete6jp>Usługi</a>
+        <div class="hidden h-px bg-white/20 sm:hidden" data-astro-cid-yxete6jp></div>
+        <a href="#projects"
+          class="block px-4 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-white/10 hover:text-amber-300 sm:px-0 sm:py-0 sm:text-stone-200 sm:hover:bg-transparent sm:hover:text-amber-300"
+          data-astro-cid-yxete6jp>Prace</a>
+        <div class="hidden h-px bg-white/20 sm:hidden" data-astro-cid-yxete6jp></div>
+        <a href="#skills"
+          class="block px-4 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-white/10 hover:text-amber-300 sm:px-0 sm:py-0 sm:text-stone-200 sm:hover:bg-transparent sm:hover:text-amber-300"
+          data-astro-cid-yxete6jp>Umiejętności</a>
+        <div class="hidden h-px bg-white/20 sm:hidden" data-astro-cid-yxete6jp></div><a href="#contact"
+          class="block px-4 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-white/10 hover:text-amber-300 sm:px-0 sm:py-0 sm:text-stone-200 sm:hover:bg-transparent sm:hover:text-amber-300 last:rounded-b-[7px] sm:last:rounded-none"
+          data-astro-cid-yxete6jp>Kontakt</a>
+      </div>
+    </div>
+  </nav>
+  <script type="module">var e = document.getElementById(`top-nav`), t = document.getElementById(`menu-toggle`), n = document.getElementById(`nav-links`); if (e && t && n) { let r = () => { let t = window.scrollY > 12; e.classList.toggle(`bg-stone-950/90`, t), e.classList.toggle(`border-stone-800/80`, t), e.classList.toggle(`text-stone-100`, t), e.classList.toggle(`shadow-lg`, t), e.classList.toggle(`bg-transparent`, !t), e.classList.toggle(`border-white/10`, !t) }; t.addEventListener(`click`, () => { let e = n.classList.toggle(`hidden`); t.setAttribute(`aria-expanded`, String(!e)) }), n.querySelectorAll(`a`).forEach(e => { e.addEventListener(`click`, () => { n.classList.add(`hidden`), t.setAttribute(`aria-expanded`, `false`) }) }), window.addEventListener(`resize`, () => { window.innerWidth >= 640 ? (n.classList.remove(`hidden`), t.setAttribute(`aria-expanded`, `true`)) : (n.classList.add(`hidden`), t.setAttribute(`aria-expanded`, `false`)) }), r(), window.addEventListener(`scroll`, r, { passive: !0 }) }
+
+  </script>
+  <header id="home"
+    class="relative -mt-16 overflow-hidden bg-[radial-gradient(circle_at_top_left,_rgba(251,191,36,0.25),_transparent_32%),linear-gradient(135deg,_#1c1917_0%,_#292524_55%,_#44403c_100%)] text-stone-100">
+    <div class="absolute inset-0 opacity-20">
+      <div class="absolute left-10 top-10 h-36 w-36 rounded-full bg-amber-400 blur-3xl blob-anim slow"></div>
+      <div class="absolute bottom-0 right-10 h-48 w-48 rounded-full bg-orange-400 blur-3xl blob-anim fast"></div>
+    </div>
+    <div
+      class="relative mx-auto grid max-w-6xl gap-8 px-4 py-20 sm:px-6 sm:py-28 lg:grid-cols-[1.15fr_0.85fr] lg:gap-10 lg:py-36">
+      <div class="max-w-2xl">
+        <p style="--i:1" class="mb-4 text-sm font-semibold uppercase tracking-[0.35em] text-amber-400 reveal">Portfolio
+          / CV</p>
+        <h1 style="--i:2" class="text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl reveal">Tworzę
+          <span class="text-amber-300">piękne</span> cyfrowe opowieści.
+        </h1>
+        <p style="--i:3" class="mt-5 flex min-h-8 items-center text-base leading-8 text-stone-300 sm:text-lg reveal">
+          <span class="mr-2 font-semibold text-amber-300">Buduję</span>
+          <span class="typing-text"></span>
+        </p>
+        <p style="--i:4" class="mt-6 text-base leading-8 text-stone-300 sm:text-lg reveal">Nazywam się Jakub Bruc i
+          jestem wielodyscyplinarnym developerem skoncentrowanym na budowaniu przejrzystych, nowoczesnych stron
+          internetowych i interfejsów produktów z ostrym okiem do szczegółów.</p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap reveal" style="--i:5">
+          <a href="#contact"
+            class="w-full rounded-full bg-amber-500 px-6 py-3 text-center font-medium text-stone-950 transition duration-300 hover:-translate-y-0.5 hover:bg-amber-400 sm:w-auto">Pracujmy
+            razem</a><!-- <a
+          href="#experience"
+          class="w-full rounded-full border border-stone-500 px-6 py-3 text-center font-medium text-stone-100 transition duration-300 hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-300 sm:w-auto"
+          >Pokaż doświadczenie</a
+        > -->
+        </div>
+      </div>
+      <div style="--i:7"
+        class="flex flex-col rounded-[28px] border border-stone-700/70 bg-stone-900/70 p-6 shadow-2xl shadow-stone-950/40 backdrop-blur sm:p-8 card-entrance reveal">
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-stone-400">Aktualnie skupiam się na</p>
+        <ul class="mt-6 space-y-3 text-sm text-stone-300 reveal-stagger">
+          <li style="--i:8" class="transition duration-300 hover:translate-x-1 reveal">• Pisaniu czystego, autorskiego
+            kodu bez ociężałych szablonów</li>
+          <li style="--i:9" class="transition duration-300 hover:translate-x-1 reveal">• Optymalizacji stron pod kątem
+            maksymalnej szybkości (Google PageSpeed)</li>
+          <li style="--i:10" class="transition duration-300 hover:translate-x-1 reveal">• Tworzeniu nowoczesnych
+            wizytówek, które konwertują ruch na klientów</li>
+        </ul>
+        <div style="--i:11"
+          class="mt-auto pt-8 flex items-center text-sm font-medium text-stone-300 reveal w-full justify-center">
+          <span class="relative flex h-2.5 w-2.5 mr-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75">
+            </span>
+            <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
+          </span>Dostępny do współpracy (Q3 2026)
+        </div>
+      </div>
+    </div>
+  </header>
+  <script type="module">var e = [`wyjątkowe doświadczenia webowe`, `przemyślane interfejsy`, `szybkie nowoczesne produkty`], t = document.querySelector(`.typing-text`); if (t) { let n = 0, r = 0, i = !1, a = () => { let o = e[n]; if (!i) { if (t.textContent = o.slice(0, r), r += 1, r > o.length) { i = !0, r = o.length, setTimeout(a, 1200); return } } else if (t.textContent = o.slice(0, r), --r, r < 0) { i = !1, n = (n + 1) % e.length, r = 0, setTimeout(a, 300); return } setTimeout(a, i ? 50 : 90) }; t.textContent = ``, setTimeout(a, 400) }
+  </script>
+  <main class="bg-slate-50 text-slate-800">
+    <section id="about"
+      class="mx-auto grid max-w-6xl gap-8 px-4 py-16 sm:px-6 sm:py-20 lg:grid-cols-[1.1fr_0.9fr] reveal delay-150">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-amber-600">O mnie</p>
+        <h2 class="mt-3 text-3xl font-semibold text-stone-900">Tworzę spokojne, wydajne doświadczenia dla nowoczesnych
+          marek.</h2>
+        <p class="mt-4 text-lg leading-8 text-stone-600">Moja praca znajduje się na przecięciu designu, kodu i
+          strategii. Lubię zamieniać pomysły w użyteczne produkty, które są wizualnie mocne i łatwe do nawigacji.</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="/cv.pdf"
+            class="rounded-full bg-stone-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-stone-700 smooth-hover">Pobierz
+            CV</a>
+          <!-- <a href="#projects" class="rounded-full border border-stone-300 px-5 py-3 text-sm font-medium text-stone-700 transition hover:border-stone-400 hover:text-stone-900 smooth-hover">Obejrzyj wybrane prace</a> -->
+        </div>
+      </div>
+      <div
+        class="rounded-[28px] border border-stone-200 bg-white p-8 shadow-sm transition duration-300 hover:-translate-y-1">
+        <h3 class="text-xl font-semibold text-stone-900">Highlights</h3>
+        <ul class="mt-4 space-y-3 text-stone-600">
+          <li>• Tworzenie nowoczesnych, statycznych stron od podstaw (HTML, CSS, JS, Astro)</li>
+          <li>• Bezkompromisowe podejście do optymalizacji i wyników w Google PageSpeed</li>
+          <li>• Inżynieryjna dbałość o czysty, semantyczny i łatwy w utrzymaniu kod</li>
+        </ul>
+      </div>
+    </section>
+    <section class="mx-auto max-w-6xl px-6 pb-20 reveal delay-150">
+      <div class="rounded-[32px] border border-stone-200 bg-white p-8 shadow-sm">
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-amber-600">Moja droga technologiczna
+        <div class="relative mt-10">
+          <div class="hidden md:block absolute left-1/2 top-0 h-full w-px bg-stone-200"></div>
+          <div class="space-y-10">
+            <div class="md:grid md:grid-cols-[1fr_40px_1fr] md:items-start">
+              <div class="md:text-right md:pr-8">
+                <div style="--i:1"
+                  class="inline-block rounded-[28px] border border-stone-200 bg-white p-6 shadow-sm reveal reveal--card smooth-hover">
+                  <p class="text-sm font-semibold text-stone-500">2022 — 2024</p>
+                  <h3 class="mt-2 font-semibold text-stone-900">Aplikacja Serwerowa Notty</h3>
+                  <p class="mt-3 text-sm leading-6 text-stone-600">Stworzenie od zera wielozadaniowego bota dla
+                    platformy Discord. Wdrożenie architektury serwer-klient, integracja zaawansowanych narzędzi
+                    moderacyjnych z interaktywnymi funkcjami dla użytkowników oraz pełne opracowanie identyfikacji
+                    wizualnej</p>
+                </div>
+              </div>
+              <div class="relative flex justify-center md:py-0 py-6">
+                <span
+                  class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-3 w-3 rounded-full bg-amber-500 ring-4 ring-white"></span>
+              </div>
+              <div></div>
+            </div>
+            <div class="md:grid md:grid-cols-[1fr_40px_1fr] md:items-start">
+              <div></div>
+              <div class="relative flex justify-center md:py-0 py-6">
+                <span
+                  class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-3 w-3 rounded-full bg-amber-500 ring-4 ring-white"></span>
+              </div>
+              <div class="md:pl-8">
+                <div style="--i:2"
+                  class="rounded-[28px] border border-stone-200 bg-white p-6 shadow-sm reveal reveal--card smooth-hover">
+                  <p class="text-sm font-semibold text-stone-500">2024 — 2025</p>
+                  <h3 class="mt-2 font-semibold text-stone-900">Programowanie Systemów Wbudowanych (IoT)</h3>
+                  <p class="mt-3 text-sm leading-6 text-stone-600">Zaprojektowanie i zaprogramowanie dedykowanego
+                    urządzenia opartego na mikrokontrolerze ESP32-S3. Projekt łączy programowanie niskopoziomowe,
+                    integrację zewnętrznych API (dane pogodowe na żywo) oraz autorski, sprzętowy interfejs użytkownika w
+                    stylu retro.</p>
+                </div>
+              </div>
+            </div>
+            <div class="md:grid md:grid-cols-[1fr_40px_1fr] md:items-start">
+              <div class="md:text-right md:pr-8">
+                <div style="--i:3"
+                  class="inline-block rounded-[28px] border border-stone-200 bg-white p-6 shadow-sm reveal reveal--card smooth-hover">
+                  <p class="text-sm font-semibold text-stone-500">2025 — Teraz</p>
+                  <h3 class="mt-2 font-semibold text-stone-900">Inżynieria Oprogramowania – Studia</h3>
+                  <p class="mt-3 text-sm leading-6 text-stone-600">Rozwijam fundamenty informatyczne. Zamiast opierać
+                    się na gotowych kreatorach, uczę się od podszewki architektury systemów, struktury danych i
+                    optymalizacji kodu. Przekłada się to na lekkie, szybkie i bezpieczne strony internetowe.</p>
+                </div>
+              </div>
+              <div class="relative flex justify-center md:py-0 py-6">
+                <span
+                  class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-3 w-3 rounded-full bg-amber-500 ring-4 ring-white"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        </p>
+      </div>
+    </section>
+    <section id="experience" class="mx-auto max-w-6xl px-4 py-8 pb-16 sm:px-6 sm:pb-20 reveal delay-225">
+      <p class="text-sm font-semibold uppercase tracking-[0.3em] text-amber-600">Moje Usługi</p>
+      <h2 class="mt-2 text-2xl font-semibold text-slate-900 sm:text-3xl">Rozwiązania skrojone pod Twój biznes.</h2>
+      <div class="mt-6 grid gap-6 md:grid-cols-3 items-start">
+        <div style="--i:1"
+          class="flex flex-col rounded-[28px] border border-stone-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md reveal reveal--card">
+          <h3 class="text-xl font-medium text-black">Strony Wizytówki</h3>
+          <p class="mt-3 text-stone-600 min-h-[120px]">Tworzę ultraszybkie i responsywne strony internetowe dla
+            lokalnych biznesów. Czysty kod sprawia, że strona ładuje się błyskawicznie i świetnie wygląda na każdym
+            telefonie.</p>
+          <div class="mt-auto pt-4">
+            <button
+              class="expand-btn flex items-center gap-2 text-sm font-semibold text-amber-600 transition-colors hover:text-amber-700">
+              <span class="btn-text">Dowiedz się więcej</span>
+              <svg class="chevron h-4 w-4 transition-transform duration-300" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="expand-content grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out">
+              <div class="overflow-hidden">
+                <p class="mt-4 border-t border-stone-100 pt-4 text-sm text-stone-600">Wykorzystuję nowoczesne
+                  technologie, takie jak Astro i Tailwind CSS, aby tworzyć strony wizytówki, które są nie tylko
+                  estetyczne, ale także zoptymalizowane pod kątem SEO i wydajności. Dzięki temu Twoja firma zyskuje
+                  profesjonalny wizerunek w sieci.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="--i:2"
+          class="flex flex-col rounded-[28px] border border-stone-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md reveal reveal--card">
+          <h3 class="text-xl font-medium text-black">Landing Page</h3>
+          <p class="mt-3 text-stone-600 min-h-[120px]">Potrzebujesz wyeksponować jedną usługę lub produkt? Projektuję
+            jednostronicowe witryny skupione na konwersji i zachęceniu klienta do kontaktu.</p>
+          <div class="mt-auto pt-4">
+            <button
+              class="expand-btn flex items-center gap-2 text-sm font-semibold text-amber-600 transition-colors hover:text-amber-700">
+              <span class="btn-text">Dowiedz się więcej</span>
+              <svg class="chevron h-4 w-4 transition-transform duration-300" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg></button>
+            <div class="expand-content grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out">
+              <div class="overflow-hidden">
+                <p class="mt-4 border-t border-stone-100 pt-4 text-sm text-stone-600">Tworzę landing page, które są
+                  zoptymalizowane pod kątem konwersji. Każdy element strony jest starannie przemyślany, aby prowadzić
+                  użytkownika do podjęcia pożądanej akcji, takiej jak wypełnienie formularza kontaktowego czy dokonanie
+                  zakupu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="--i:3"
+          class="flex flex-col rounded-[28px] border border-stone-200 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md reveal reveal--card">
+          <h3 class="text-xl font-medium text-black">Optymalizacja i Wydajność</h3>
+          <p class="mt-3 text-stone-600 min-h-[120px]">Twoja obecna strona ładuje się wiekami? Przepisuję ciężkie
+            szablony na czysty, dedykowany kod HTML/CSS, windując wyniki w Google PageSpeed.</p>
+          <div class="mt-auto pt-4">
+            <button
+              class="expand-btn flex items-center gap-2 text-sm font-semibold text-amber-600 transition-colors hover:text-amber-700">
+              <span class="btn-text">Dowiedz się więcej</span>
+              <svg class="chevron h-4 w-4 transition-transform duration-300" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="expand-content grid grid-rows-[0fr] opacity-0 transition-all duration-300 ease-in-out">
+              <div class="overflow-hidden">
+                <p class="mt-4 border-t border-stone-100 pt-4 text-sm text-stone-600">Optymalizuję strony internetowe
+                  pod kątem wydajności, upraszczając kod i redukując ilość zasobów, które muszą być ładowane przez
+                  przeglądarkę. Wyniki są mierzone za pomocą narzędzi takich jak Google PageSpeed Insights.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Jeden, główny nasłuchiwacz na cały dokument (Event Delegation)
+      document.addEventListener('click', function (event) {
+        // Sprawdzamy, czy to, co kliknęliśmy, jest wewnątrz naszego przycisku
+        const btn = event.target.closest('.expand-btn');
+
+        // Jeśli kliknięto coś innego niż przycisk - ignorujemy i kończymy
+        if (!btn) return;
+
+        // Zatrzymujemy domyślne zachowanie
+        event.preventDefault();
+
+        // Szukamy zawartości TYLKO dla tego konkretnego przycisku
+        const currentContent = btn.nextElementSibling;
+        if (!currentContent || !currentContent.classList.contains('expand-content')) return;
+
+        // Sprawdzamy, czy kliknięta karta jest już otwarta
+        const isCurrentlyExpanded = currentContent.classList.contains('grid-rows-[1fr]');
+
+        // 1. FAZA RESETU - Zwijamy wszystkie karty na stronie
+        document.querySelectorAll('.expand-content').forEach(content => {
+          content.classList.remove('grid-rows-[1fr]', 'opacity-100');
+          content.classList.add('grid-rows-[0fr]', 'opacity-0');
+        });
+
+        document.querySelectorAll('.expand-btn .chevron').forEach(chevron => {
+          chevron.classList.remove('rotate-180');
+        });
+
+        document.querySelectorAll('.expand-btn .btn-text').forEach(text => {
+          text.textContent = 'Dowiedz się więcej';
+        });
+
+        // 2. FAZA OTWIERANIA - Rozwijamy tylko klikniętą, jeśli była zamknięta
+        if (!isCurrentlyExpanded) {
+          currentContent.classList.remove('grid-rows-[0fr]', 'opacity-0');
+          currentContent.classList.add('grid-rows-[1fr]', 'opacity-100');
+
+          const currentChevron = btn.querySelector('.chevron');
+          if (currentChevron) currentChevron.classList.add('rotate-180');
+
+          const currentBtnText = btn.querySelector('.btn-text');
+          if (currentBtnText) currentBtnText.textContent = 'Zwiń';
+        }
+      });
+    </script><!-- <Projects /> -->
+    <section id="skills" class="mx-auto max-w-6xl px-4 pb-16 sm:px-6 sm:pb-20 transiton reveal delay-150">
+      <h2 class="text-4xl font-bold text-stone-900">Umiejętności</h2>
+      <p class="mt-4 text-stone-600">Zestaw narzędzi i umiejętności, które wykorzystuję w swojej pracy</p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <span style="--i:1"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">HTML</span>
+        <span style="--i:2"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">CSS</span>
+        <span style="--i:3"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">JavaScript</span>
+        <span style="--i:4"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">Astro</span>
+        <span style="--i:5"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">React</span>
+        <span style="--i:6"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">Tailwind
+          CSS</span>
+        <span style="--i:7"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">Figma</span>
+        <span style="--i:8"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">Accessibility</span>
+        <span style="--i:9"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">Performance
+          Optimization</span>
+        <span style="--i:10"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">Design
+          Systems</span>
+        <span style="--i:11"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">UI/UX
+          Design</span>
+        <span style="--i:12"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">Responsive
+          Design</span>
+        <span style="--i:13"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">Cross-Browser
+          Compatibility</span>
+        <span style="--i:14"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">Version
+          Control (Git)</span>
+        <span style="--i:15"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">Agile
+          Methodologies</span>
+        <span style="--i:16"
+          class="rounded-full border border-stone-300 bg-white px-4 py-2 text-sm font-medium text-stone-700 shadow-sm transition duration-300 hover:-translate-y-0.5 reveal delay-150">Problem
+          Solving</span>
+      </div>
+    </section>
+    <section id="contact" class="mx-auto max-w-6xl px-4 pb-20 sm:px-6 sm:pb-24 reveal delay-225">
+      <div class="rounded-[32px] bg-[#292524] p-6 text-white shadow-xl sm:p-8">
+        <p class="text-sm font-semibold uppercase tracking-[0.3em] text-amber-400">Contact Kontakt</p>
+        <h2 class="mt-3 text-3xl font-semibold">Zainteresowany współpracą?</h2>
+        <p class="mt-4 max-w-2xl text-stone-300">Jestem dostępny dla projektów freelance, pełnoetatowych ról i
+          przemyślanych współprac.
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <a href="mailto:kubabruc@gmail.com"
+            class="w-full rounded-full bg-amber-500 px-6 py-3 text-center font-medium text-stone-950 transition duration-300 hover:-translate-y-0.5 hover:bg-amber-400 sm:w-auto">kubabruc@gmail.com</a>
+          <a href="https://www.linkedin.com/in/jakub-bruc" target="_blank" rel="noreferrer"
+            class="w-full rounded-full border border-stone-700 px-6 py-3 text-center font-medium text-stone-200 transition duration-300 hover:-translate-y-0.5 hover:border-amber-400 hover:text-amber-300 sm:w-auto">LinkedIn</a>
+        </div>
+        </p>
+      </div>
+    </section>
+    <footer class="border-t border-stone-200 bg-stone-100/80">
+      <div
+        class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-stone-600 sm:px-6 md:flex-row md:items-center md:justify-between reveal delay-150">
+        <p>© 2026 Jakub Bruc. Wszystkie prawa zastrzeżone.</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="https://www.linkedin.com/in/jakub-bruc" target="_blank" rel="noreferrer"
+            class="transition hover:text-stone-900">LinkedIn</a>
+          <a href="https://github.com/Brucu" target="_blank" rel="noreferrer"
+            class="transition hover:text-stone-900">GitHub</a>
+          <a href="mailto:kubabruc@gmail.com" class="transition hover:text-stone-900">Email</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script
+    type="module">document.addEventListener(`DOMContentLoaded`, () => { let e = new IntersectionObserver((e, t) => { e.forEach(e => { e.isIntersecting && (e.target.classList.add(`reveal-active`), t.unobserve(e.target)) }) }, { threshold: .12 }); document.querySelectorAll(`.reveal, .card-entrance`).forEach(t => { e.observe(t) }) });</script>
+</body>
+
+</html>
